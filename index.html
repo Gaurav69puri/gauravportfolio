@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gaurav Laxman Puri — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d9b7d1f4.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root{
+      --bg: #0f172a;
+      --card: rgba(255,255,255,0.06);
+      --accent1: #38bdf8; /* sky blue */
+      --accent2: #8b5cf6; /* violet */
+      --accent3: #f43f5e; /* rose */
+      --gradient: linear-gradient(135deg,var(--accent2),var(--accent3));
+      --text: #E6EEF8;
+      --muted: #9AA7C7;
+      font-family: 'Poppins', sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:auto;padding:36px 20px}
+    header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .logo{font-weight:800;font-size:1.4rem;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .btn{background:var(--gradient);padding:10px 16px;border-radius:10px;color:white;font-weight:600;border:none;cursor:pointer}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.1);padding:8px 12px;border-radius:8px;color:var(--text)}
+    section{margin-top:48px}
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    .section-title h2{margin:0}
+    .skills,.projects,.cards{display:grid;gap:16px}
+    .skills{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+    .skill{padding:8px;border-radius:8px;background:rgba(255,255,255,0.05);text-align:center}
+    .projects{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .proj{background:rgba(255,255,255,0.05);padding:16px;border-radius:12px}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:rgba(255,255,255,0.05);padding:16px;border-radius:12px}
+    footer{text-align:center;margin-top:48px;color:var(--muted)}
+  </style>
+</head>
+<body>
+<div class="container">
+
+<header data-aos="fade-down">
+  <div class="logo">Gaurav Laxman Puri</div>
+  <nav style="display:flex;gap:12px;flex-wrap:wrap">
+    <a class="ghost" href="#projects">Projects</a>
+    <a class="ghost" href="#contact">Contact</a>
+    <a class="btn" href="cv.pdf" download>Download Resume</a>
+  </nav>
+</header>
+
+<section id="hero" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;flex-wrap:wrap">
+  <div data-aos="fade-right">
+    <h1>Software Developer</h1>
+    <p class="muted">Aspiring Full Stack Developer with internship experience in building responsive web applications using modern technologies. Passionate about clean code and continuous learning.</p>
+    <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn" href="#projects">See Projects</a>
+      <a class="ghost" href="#contact">Hire Me</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" data-aos="fade-up">
+  <div class="section-title"><h2>About Me</h2></div>
+  <p class="muted">Aspiring Full Stack Developer with hands-on internship experience in building responsive web applications using modern technologies. Eager to contribute to dynamic tech teams and develop scalable, efficient software. Passionate about clean code, learning, and continuous improvement.</p>
+</section>
+
+<section id="skills" data-aos="fade-up">
+  <div class="section-title"><h2>Technical Skills</h2></div>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React.js</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">Python</div>
+    <div class="skill">Bootstrap</div>
+    <div class="skill">Tailwind CSS</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">REST APIs</div>
+    <div class="skill">Git</div>
+    <div class="skill">Npm</div>
+  </div>
+</section>
+
+<section id="projects" data-aos="fade-up">
+  <div class="section-title"><h2>Projects</h2></div>
+  <div class="projects">
+    <div class="proj">
+      <h3>Social Media Management App</h3>
+      <p class="muted">Dashboard to manage multiple social media accounts from one interface. Implemented scheduling, posting, and analytics using React, Node.js, and MongoDB.</p>
+    </div>
+    <div class="proj">
+      <h3>AI Virtual Mouse Using Hand Gestures</h3>
+      <p class="muted">Python and OpenCV system to control a virtual mouse through webcam-based hand gestures, enabling click and cursor movement without touch.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" data-aos="fade-up">
+  <div class="section-title"><h2>Experience</h2></div>
+  <div class="cards">
+    <div class="card">
+      <h3>Full Stack Web Development Internship</h3>
+      <p class="muted">Aug 2023 – Feb 2024 — Built and maintained responsive web apps with React.js, Node.js, Express, MongoDB. Integrated APIs, optimized UI with Tailwind CSS.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education" data-aos="fade-up">
+  <div class="section-title"><h2>Education</h2></div>
+  <ul class="muted">
+    <li><strong>B.E. in Information Science and Engineering</strong> — Vishveshwarya Technological University (2020–2024) — 71%</li>
+    <li><strong>Class XII (PCMB)</strong> — Nagarajuna PU College (2019–2020) — 62%</li>
+    <li><strong>Class X</strong> — Jain International School (2017–2018) — 61%</li>
+  </ul>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <div class="section-title"><h2>Contact</h2></div>
+  <p class="muted">Let's connect! You can reach me via:</p>
+  <p>Email: <a href="mailto:gauravaish6199@gmail.com">gauravaish6199@gmail.com</a></p>
+  <p>Phone: <a href="tel:+916360395913">+91 6360395913</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/gaurav-puri-5876472b0">linkedin.com/in/gaurav-puri-5876472b0</a></p>
+  <p>Portfolio: <a href="https://gaurav69puri.github.io/My---Portfolio/">gaurav69puri.github.io/My---Portfolio</a></p>
+</section>
+
+<footer>
+  Made with ❤️ — © Gaurav Laxman Puri 2025
+</footer>
+
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration:700,once:true});</script>
+</body>
+</html>
